@@ -1,19 +1,26 @@
+// ========== expo core ========== //
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 
-export default () => (
+// ========== react core ========== //
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+
+// ========== custom components ========== //
+import First from './src/components/First';
+
+export default (): JSX.Element => (
   <View style={styles.container}>
-    <Text>Open up App.tsx to start working on your app!</Text>
+    <First info={'Olha, mais um olá mundo'}></First>
     <StatusBar style="auto" />
   </View>
 );
 
+// ========== styles ========== //
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#7af',
     alignItems: 'center',
     justifyContent: 'center',
+    backgroundColor: '#333',
   },
 });
