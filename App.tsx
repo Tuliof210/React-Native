@@ -5,11 +5,14 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
+// ========== styles ========== //
+import rootStyle from './src/styles/main';
+
 // ========== custom components ========== //
 import First from './src/components/First';
 
 export default (): JSX.Element => (
-  <View style={styles.container}>
+  <View style={[rootStyle.container, styles.backGround]}>
     <First info={'Olha, mais um olá mundo'}></First>
     <StatusBar style="auto" />
   </View>
@@ -17,10 +20,7 @@ export default (): JSX.Element => (
 
 // ========== styles ========== //
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#333',
+  backGround: {
+    backgroundColor: '#205',
   },
 });
