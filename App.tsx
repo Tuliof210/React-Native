@@ -1,15 +1,11 @@
-// ========== expo core ========== //
 import { StatusBar } from 'expo-status-bar';
 
-// ========== react core ========== //
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-// ========== styles ========== //
-import rootStyle from './src/styles/main';
-
-// ========== custom components ========== //
 import First from './src/components/First';
+
+import rootStyle from './src/styles/main';
 
 export default (): JSX.Element => (
   <View style={[rootStyle.container, styles.backGround]}>
@@ -18,7 +14,6 @@ export default (): JSX.Element => (
   </View>
 );
 
-// ========== styles ========== //
 const styles = StyleSheet.create({
   backGround: {
     backgroundColor: '#205',

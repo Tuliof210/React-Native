@@ -1,12 +1,14 @@
-// ========== react core ========== //
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
+
+type FirstProps = {
+  info?: string;
+};
 
 export default (props: FirstProps): JSX.Element => (
   <Text style={styles.character}>{props.info}</Text>
 );
 
-// ========== styles ========== //
 const styles = StyleSheet.create({
   character: {
     color: '#f05',
@@ -14,8 +16,3 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
 });
-
-// ========== types and interfaces ========== //
-type FirstProps = {
-  info?: string;
-};
