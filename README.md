@@ -1,7 +1,5 @@
 # Anotações Importantes
 
----
-
 ### Estilos
 
 - não se usa CSS
